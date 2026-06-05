@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Business Workshop — build your business online in one day | Social Zip</title>
+<meta name="description" content="In one day, build your live website, customer profile, AI clone, marketing plan and 30 posts — done WITH you, no code. Live on Zoom, Saturday 20 June. R1,997.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,800;0,9..144,900;1,9..144,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--teal-hi:#1ED0C4;--teal:#15BBB0;--teal-mid:#0AA199;--charcoal:#26302F;--slate:#46514F;--ink:#16201F;--cream:#F4F1EA;--yel:#FFD23F;--coral:#FF6B47;--mint:#5fd6c8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:900;line-height:1.05;letter-spacing:-.02em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+a{text-decoration:none}
+.hl{position:relative;display:inline-block;font-style:italic;z-index:1}
+.hl::before{content:"";position:absolute;left:-8px;right:-8px;top:12%;bottom:8%;background:var(--yel);border-radius:12px;transform:rotate(-2deg);z-index:-1}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(244,241,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(22,32,31,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+nav img{height:46px;display:block}
+.navlinks{display:flex;align-items:center;gap:22px;font-weight:700;font-size:15px}
+.navlinks a.q{color:var(--teal-mid)}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;border-radius:100px;padding:14px 26px;font-size:16px;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(-2px)}
+.btn-coral{background:var(--coral);color:#fff;box-shadow:0 12px 28px rgba(255,107,71,.32)}
+.btn-dark{background:var(--charcoal);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border:2px solid rgba(22,32,31,.18)}
+.btn-light{background:#fff;color:var(--ink);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+/* hero */
+.hero{background:linear-gradient(160deg,var(--teal-hi) 0%,var(--teal-mid) 55%,var(--charcoal) 130%);color:#FFFDF7;position:relative;overflow:hidden}
+.hero .ring{position:absolute;border-radius:50%;border:3px solid rgba(255,255,255,.1)}
+.hero .wrap{padding:80px 24px 90px;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.3);border-radius:100px;padding:9px 20px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:13px;margin-bottom:26px}
+.hero h1{font-size:74px;max-width:880px}
+.hero p.lead{font-size:23px;max-width:640px;margin-top:24px;color:rgba(255,253,247,.92);font-weight:500}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;align-items:center}
+.cta-row .note{font-size:14px;color:rgba(255,253,247,.8);font-weight:600}
+.trustline{margin-top:30px;font-size:15px;color:rgba(255,253,247,.85);font-weight:600;display:flex;gap:22px;flex-wrap:wrap}
+.trustline span{display:flex;align-items:center;gap:8px}
+/* sections */
+section{padding:78px 0}
+.tag{display:inline-block;font-weight:800;text-transform:uppercase;letter-spacing:.15em;font-size:13px;color:var(--teal-mid);margin-bottom:14px}
+h2.big{font-size:46px;max-width:760px}
+.lead2{font-size:19px;color:#3a4544;max-width:680px;margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:44px}
+.card{background:#fff;border:1px solid rgba(22,32,31,.08);border-radius:18px;padding:30px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+.card .n{font-family:Fraunces;font-weight:900;font-size:40px;color:var(--teal-mid);line-height:1}
+.card h3{font-size:23px;margin:14px 0 8px}
+.card p{font-size:16px;color:#3a4544}
+.dark{background:var(--charcoal);color:#FFFDF7}
+.dark .lead2{color:rgba(255,253,247,.82)}
+.dark .tag{color:var(--mint)}
+.day{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:44px}
+.day .slot{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px}
+.day .slot .t{font-weight:800;color:var(--yel);text-transform:uppercase;letter-spacing:.12em;font-size:13px;margin-bottom:10px}
+.day .slot h3{font-size:22px;margin-bottom:6px}
+.day .slot p{color:rgba(255,253,247,.82);font-size:15px}
+/* founder */
+.founder{display:grid;grid-template-columns:0.8fr 1.2fr;gap:46px;align-items:center}
+.founder img{width:100%;border-radius:22px;object-fit:cover;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.founder h2{font-size:40px}
+.founder p{font-size:18px;color:#3a4544;margin-top:16px}
+/* price */
+.price{background:linear-gradient(150deg,var(--teal-mid),var(--slate));color:#FFFDF7;border-radius:26px;padding:54px;text-align:center;margin-top:10px}
+.price .amt{font-family:Fraunces;font-weight:900;font-size:74px;line-height:1}
+.price .amt small{font-size:26px;font-weight:700;opacity:.8}
+.price p{font-size:17px;color:rgba(255,253,247,.88);margin:10px auto 0;max-width:520px}
+/* faq */
+.faq{max-width:760px;margin:40px auto 0}
+.faq details{background:#fff;border:1px solid rgba(22,32,31,.08);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;font-size:18px;cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin-top:10px;color:#3a4544;font-size:16px}
+/* footer */
+footer{background:var(--ink);color:rgba(255,253,247,.7);text-align:center;padding:40px 24px;font-size:14px}
+footer img{height:50px;margin-bottom:14px}
+/* chat bubble */
+.chat{position:fixed;right:22px;bottom:22px;z-index:100;display:flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-weight:800;padding:14px 22px 14px 18px;border-radius:100px;box-shadow:0 14px 34px rgba(0,0,0,.28);font-size:16px}
+.chat:hover{transform:translateY(-2px)}
+.chat svg{width:26px;height:26px;fill:#fff}
+@media(max-width:760px){.hero h1{font-size:46px}.founder{grid-template-columns:1fr}h2.big{font-size:34px}.navlinks a:not(.btn){display:none}.chat span{display:none}.chat{padding:16px;border-radius:50%}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#top"><img src="sz-logo.png" alt="Social Zip"></a>
+  <div class="navlinks">
+    <a href="#what">What you build</a>
+    <a href="#day">The day</a>
+    <a class="q" href="https://quiz.socialzip.co.za/">Free quiz</a>
+    <a class="btn btn-coral" href="#reserve">Reserve your seat</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="ring" style="width:480px;height:480px;top:-160px;right:-120px"></div>
+  <div class="ring" style="width:260px;height:260px;bottom:-80px;left:-70px;border-color:rgba(255,210,63,.35)"></div>
+  <div class="wrap">
+    <span class="eyebrow">AI Business Workshop &middot; Live on Zoom &middot; Saturday 20 June</span>
+    <h1>Build your business online &mdash; in <span class="hl">one day.</span></h1>
+    <p class="lead">Walk in with an idea. Walk out with a live website, your customer mapped, your AI clone, a marketing plan and 30 posts. Built <b>with</b> you &mdash; no code, no jargon.</p>
+    <div class="cta-row">
+      <a class="btn btn-coral" href="#reserve">Reserve your seat &rarr;</a>
+      <a class="btn btn-light" href="#call">Book a quick call</a>
+      <span class="note">Seats are limited &mdash; founding cohort.</span>
+    </div>
+    <div class="trustline">
+      <span>✓ Join from anywhere in SA</span>
+      <span>✓ Done WITH you, not homework</span>
+      <span>✓ Run by a working AI agency</span>
+    </div>
+  </div>
+</header>
+
+<section id="what">
+  <div class="wrap">
+    <span class="tag">What you walk out with</span>
+    <h2 class="big">Not a notebook of someday. The actual things, <span class="hl">built.</span></h2>
+    <div class="grid">
+      <div class="card"><div class="n">01</div><h3>A live website</h3><p>Published, real, yours — not a someday project sitting in your drafts.</p></div>
+      <div class="card"><div class="n">02</div><h3>Your ideal-customer profile</h3><p>Finally clear on who you sell to and exactly what to say to them.</p></div>
+      <div class="card"><div class="n">03</div><h3>Your AI clone</h3><p>Content in your own voice, so marketing stops eating your week.</p></div>
+      <div class="card"><div class="n">04</div><h3>A marketing plan</h3><p>A simple system you’ll actually follow — no more panic posting.</p></div>
+      <div class="card"><div class="n">05</div><h3>30 posts, ready</h3><p>A month of content across your platforms, done before you leave.</p></div>
+      <div class="card"><div class="n">06</div><h3>The confidence to run it</h3><p>You built it, so you can keep doing it — without needing an agency on retainer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="day">
+  <div class="wrap">
+    <span class="tag">How the day runs</span>
+    <h2 class="big">No fluff. Every hour, a real piece <span class="hl">gets built.</span></h2>
+    <div class="day">
+      <div class="slot"><div class="t">Morning</div><h3>Get clear</h3><p>Map your ideal customer and write the message that actually sells.</p></div>
+      <div class="slot"><div class="t">Midday</div><h3>Go live</h3><p>Your website is built and published — live on the internet.</p></div>
+      <div class="slot"><div class="t">Afternoon</div><h3>Automate</h3><p>Build your AI clone, your marketing plan and 30 ready-to-post pieces.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="founder">
+      <img src="shamz-laptop.jpg" alt="Shamz — Social Zip">
+      <div>
+        <span class="tag">Who’s guiding you</span>
+        <h2>I run an AI agency. This is my real playbook — handed to you in a day.</h2>
+        <p>I’m Shamz, founder of Social Zip. Everything in this workshop is what my team builds for paying clients every week — the website, the customer profile, the AI clone, the content engine. Instead of doing it <i>for</i> you and leaving you dependent, we build it <b>with</b> you, so you own it and can run it yourself.</p>
+        <p style="margin-top:22px"><a class="btn btn-dark" href="https://quiz.socialzip.co.za/">Take the free 90-second quiz &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reserve" style="padding-top:20px">
+  <div class="wrap">
+    <div class="price">
+      <span class="tag" style="color:var(--yel)">Founding cohort</span>
+      <div class="amt"><small>R</small>1,997 <small>once-off</small></div>
+      <p>One full day. Everything above, built with you and yours to keep. Live on Zoom from anywhere in South Africa — in-person dates set for June/July once seats fill.</p>
+      <div class="cta-row" style="justify-content:center;margin-top:30px">
+        <a class="btn btn-coral" href="https://crm.socialzip.co.za/payment-link/6a1971f503b17c94f571384f">Reserve your seat &rarr;</a>
+        <a class="btn btn-light" id="call" href="https://crm.socialzip.co.za/widget/booking/OUpsKrcWXF15r3fxhfK9">Book a quick call first</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <span class="tag">Questions</span>
+    <h2 class="big">Honest answers.</h2>
+    <div class="faq">
+      <details><summary>I’m not techy. Is this for me?</summary><p>Yes — especially for you. If you can use WhatsApp, you can do this. There’s no code, and we’re building it with you the whole way.</p></details>
+      <details><summary>Is it online or in person?</summary><p>Live on Zoom, so you can join from anywhere in South Africa. In-person dates are coming in June/July and get locked once seats fill.</p></details>
+      <details><summary>What do I actually leave with?</summary><p>A live website, your customer profile, your AI clone, a marketing plan and 30 posts — real, finished, and yours to keep.</p></details>
+      <details><summary>Not sure yet?</summary><p>Take the free 90-second readiness quiz, or book a quick call and we’ll tell you honestly if it’s a fit.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="sz-logo.png" alt="Social Zip">
+  <p>Social Zip — a working AI &amp; automation agency.<br>© 2026 Social Zip. Build it with us.</p>
+</footer>
+
+<a class="chat" href="https://wa.me/27797327231?text=Hi%20Social%20Zip%2C%20I%27d%20like%20to%20know%20more%20about%20the%20AI%20Business%20Workshop" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L4 29l7.2-1.9c1.8 1 3.8 1.5 5.9 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.6c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.1-4.2-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.5C5 9.7 9.9 5 16 5s11 4.7 11 10.5S22.1 25.6 16 25.6zm6-7.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.4-.6.1-.2.1-.4 0-.6l-1-2.5c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.1 2.9 1.2 3.5 1 4.1.9.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+  <span>Chat with us</span>
+</a>
+
+</body>
+</html>
